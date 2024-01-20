@@ -1,0 +1,6 @@
+token
+6801708652:AAG2-GNxDGmuvQg2MguvBcdSY3zv7kzYrcE
+url
+https://t.me/TheHidangBot
+chat id
+1998238722

@@ -1,0 +1,12 @@
+email = nahidh2018@gmail.com
+
+site key (6LcQ51ApAAAAACLmK_vofgoSCw7COAw3YBRny_zZ)
+secret key(6LcQ51ApAAAAAA53NLcJ2ezUPt_74QeL9R6YraV9)
+
+email = babn1168@gmail.com
+
+site_key (6Lcy51ApAAAAAIpJebFZTLQADQMtBFKZ7EVFvlNm)
+secret_key (6Lcz51ApAAAAAPSKmfi2mLBKOdbNQ4mkEbTxgVT-)
+
+
+https://www.google.com/recaptcha/about/

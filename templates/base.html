@@ -194,7 +194,7 @@
                             <span>View Full Cart</span>
                           </a>
                           <a
-                            href=""{% url 'checkout' %}""
+                            href="{% url 'checkout' %}"
                             class="li-button li-button-fullwidth li-button-sm"
                           >
                             <span>Checkout</span>
@@ -298,8 +298,7 @@
                     <ul>
                       <li><a href="{% url 'beranda' %}">Beranda</a></li>
                       <li><a href="{% url 'profil' %}">Profil</a></li>
-                      <li><a href="#">Produk</a></li>
-                      <li><a href="{% url 'pemesanan' %}">Pemesanan</a></li>
+                      <li><a href="{% url 'cart_detail' %}">Pemesanan</a></li>
                       <li><a href="{% url 'kontak' %}">Hubungi Kami</a></li>
                     </ul>
                   </div>

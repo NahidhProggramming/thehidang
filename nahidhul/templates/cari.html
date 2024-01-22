@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% load static %} {% load humanize %} 
+{% extends "base.html" %} 
+{% load static %} 
+{% load humanize %} 
 {% block content%}
 <div class="breadcrumb-area">
   <div class="container">
@@ -65,7 +67,9 @@
                     <!-- single-product-wrap start -->
                     <div class="single-product-wrap">
                       <div class="product-image">
-                        <a href="{% url 'produk' cari.kategori.slug cari.slug %}">
+                        <a
+                          href="{% url 'produk' cari.kategori.slug cari.slug %}"
+                        >
                           <img
                             src="{{cari.gambar.url}}"
                             alt="{{cari.nama_produk}}"
@@ -137,9 +141,7 @@
                   </div>
                   {% empty %}
                   <div class="col-lg-3 col-md-4 col-sm-6 mt-40">
-                    <div class="alert alert-danger">
-                      HASIL PENCARIAN NIHIL  
-                    </div>
+                    <div class="alert alert-danger">HASIL PENCARIAN NIHIL</div>
                   </div>
                   {% endfor %}
                 </div>
@@ -156,7 +158,9 @@
                   <div class="row product-layout-list last-child">
                     <div class="col-lg-3 col-md-5">
                       <div class="product-image">
-                        <a href="{% url 'produk' cari.kategori.slug cari.slug %}">
+                        <a
+                          href="{% url 'produk' cari.kategori.slug cari.slug %}"
+                        >
                           <img
                             src="{{cari.gambar.url}}"
                             alt="{{cari.nama_produk}}"
@@ -179,17 +183,17 @@
                           </h4>
                           <div class="price-box">
                             {% if cari.diskon == 0 %}
-                            <span class="newprice new-price-2"
+                            <span class="new-price new-price-2"
                               >Rp. {{cari.harga|intcomma}}</span
                             >
                             {% else %}
-                            <span class="newprice new-price-2"
+                            <span class="new-price new-price-2"
                               >Rp. {{cari.setelah_diskon|intcomma}}</span
                             >
-                            <span class="oldprice"
+                            <span class="old-price"
                               >Rp. {{cari.harga|intcomma}}</span
                             >
-                            <span>{{cari.diskon}} %</span>
+                            <span class="discount-percentage">{{cari.diskon}}%</span>
                             {% endif %}
                           </div>
                           <p>{{ cari.keterangan|truncatewords:15|safe }}</p>
@@ -228,9 +232,7 @@
                   </div>
                   {% empty %}
                   <div class="row product-layout-list last-child">
-                    <div class="alert alert-danger">
-                      HASIL PENCARIAN NIHIL
-                    </div>
+                    <div class="alert alert-danger">HASIL PENCARIAN NIHIL</div>
                   </div>
                   {% endfor %}
                 </div>

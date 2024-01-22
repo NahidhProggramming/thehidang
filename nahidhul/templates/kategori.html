@@ -89,7 +89,7 @@
                             >
                             {% else %}
                             <span class="new-price new-price-2"
-                              >Rp. {{row.setela_diskon|intcomma}}</span
+                              >Rp. {{row.setelah_diskon|intcomma}}</span
                             >
                             <span class="old-price"
                               >Rp. {{row.harga|intcomma}}</span
@@ -175,17 +175,17 @@
                           </h4>
                           <div class="price-box">
                             {% if row.diskon == 0 %}
-                            <span class="newprice new-price-2"
+                            <span class="new-price new-price-2"
                               >Rp. {{row.harga|intcomma}}</span
                             >
                             {% else %}
-                            <span class="newprice new-price-2"
-                              >Rp. {{row.setela_diskon|intcomma}}</span
+                            <span class="new-price new-price-2"
+                              >Rp. {{row.setelah_diskon|intcomma}}</span
                             >
-                            <span class="oldprice"
+                            <span class="old-price"
                               >Rp. {{row.harga|intcomma}}</span
                             >
-                            <span>{{row.diskon}} %</span>
+                            <span class="discount-percentage">{{row.diskon}} %</span>
                             {% endif %}
                           </div>
                           <p>{{ row.keterangan|truncatewords:15|safe }}</p>

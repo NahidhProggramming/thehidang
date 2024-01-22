@@ -149,7 +149,7 @@
             </div>
             {% else %}
             <span class="old-price"><s>Rp. {{produk.harga|intcomma}}</s></span>
-            Diskon <span class="discountpercentage">{{produk.diskon}}%</span>
+            Diskon <span class="discount-percentage">{{produk.diskon}}%</span>
             <div class="price-box pt-20">
               <span class="new-price new-price-2"
                 >Rp. {{produk.setelah_diskon|intcomma}}</span
@@ -283,8 +283,8 @@
                       <span class="new-price new-price-2"
                         >Rp. {{rel.setelah_diskon|intcomma}}</span
                       >
-                      <span class="oldprice">Rp. {{rel.harga|intcomma}}</span>
-                      <span class="discountpercentage">{{rel.diskon}}%</span>
+                      <span class="old-price">Rp. {{rel.harga|intcomma}}</span>
+                      <span class="discount-percentage">{{rel.diskon}}%</span>
                       {% endif %}
                     </div>
                   </div>

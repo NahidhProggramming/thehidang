@@ -152,7 +152,7 @@
             Diskon <span class="discountpercentage">{{produk.diskon}}%</span>
             <div class="price-box pt-20">
               <span class="new-price new-price-2"
-                >Rp. {{produk.setela_diskon|intcomma}}</span
+                >Rp. {{produk.setelah_diskon|intcomma}}</span
               >
             </div>
             {% endif %}
@@ -193,7 +193,7 @@
                   n%20pemesan%20product%20{{produk.nama_produk}}%20apakah%20tersedia%20?%20"
                   target="_blank"
                   ><b><i class="fa fa-whatsapp"></i> Beli whatsapp</b></a
-                >
+                ></li>
                 <div class="product-social-sharing pt-25">
                   <ul>
                     <li class="facebook">
@@ -230,7 +230,7 @@
                     </li>
                   </ul>
                 </div>
-              </li>
+              
             </div>
           </div>
         </div>
@@ -281,7 +281,7 @@
                       >
                       {% else %}
                       <span class="new-price new-price-2"
-                        >Rp. {{rel.setela_diskon|intcomma}}</span
+                        >Rp. {{rel.setelah_diskon|intcomma}}</span
                       >
                       <span class="oldprice">Rp. {{rel.harga|intcomma}}</span>
                       <span class="discountpercentage">{{rel.diskon}}%</span>

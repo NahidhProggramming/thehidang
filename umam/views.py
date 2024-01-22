@@ -26,10 +26,9 @@ def cart_detail(request):
     cart = Cart(request)
     context = {
             'judul': 'Halaman Pemesanan Produk',
-            'cart':cart
+            'cart':cart,
     }
     for item in cart:
-        item['update_quantity_form'] = CartAddProductForm(
-            initial={'quantity': item['quantity'], 'update': True}
-        )
+        item['update_quantity_form'] = CartAddProductForm(initial={'quantity': 
+        item['quantity'], 'update': True})
     return render(request, 'pemesanan.html',context)
